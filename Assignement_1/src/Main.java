@@ -57,10 +57,6 @@ public class Main extends JFrame {
 		JMenuBar menuBar = new JMenuBar();
 		contentPane.add(menuBar);
 		
-		List list = new List();
-		list.setBackground(new Color(0, 153, 204));
-		contentPane.add(list);
-		
 		Box verticalBox = Box.createVerticalBox();
 		verticalBox.setBackground(new Color(0, 51, 0));
 		contentPane.add(verticalBox);
