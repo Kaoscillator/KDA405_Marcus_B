@@ -14,6 +14,14 @@ import java.awt.GridBagLayout;
 import javax.swing.Box;
 import javax.swing.JMenuBar;
 import java.awt.List;
+import java.awt.Button;
+import java.awt.Font;
+import javax.swing.JTextPane;
+import java.awt.ScrollPane;
+import javax.swing.JPopupMenu;
+import java.awt.Component;
+import java.awt.event.MouseAdapter;
+import java.awt.event.MouseEvent;
 
 public class Main extends JFrame {
 
@@ -41,25 +49,55 @@ public class Main extends JFrame {
 	public Main() {
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 572, 498);
+		
+		JMenuBar menuBar = new JMenuBar();
+		setJMenuBar(menuBar);
+		
+		Button button = new Button("ARKIV");
+		button.setBackground(new Color(102, 153, 204));
+		button.setActionCommand("ARKIV");
+		button.setFont(new Font("SansSerif", Font.PLAIN, 12));
+		menuBar.add(button);
+		
+		Button button_1 = new Button("MEDLEM");
+		button_1.setBackground(new Color(102, 153, 204));
+		button_1.setFont(new Font("SansSerif", Font.PLAIN, 12));
+		menuBar.add(button_1);
+		
+		Button button_2 = new Button("HJ\u00C4LP");
+		button_2.setBackground(new Color(102, 153, 204));
+		button_2.setFont(new Font("SansSerif", Font.PLAIN, 12));
+		menuBar.add(button_2);
 		contentPane = new JPanel();
-		contentPane.setBackground(Color.WHITE);
+		contentPane.setBackground(new Color(102, 153, 204));
 		contentPane.setForeground(Color.WHITE);
 		contentPane.setToolTipText("");
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 		setContentPane(contentPane);
-		contentPane.setLayout(new GridLayout(1, 0, 0, 0));
+		contentPane.setLayout(new BorderLayout(0, 0));
 		
-		JTextArea txtrMalmFc = new JTextArea();
-		txtrMalmFc.setText("Malm\u00F6 FC");
-		txtrMalmFc.setForeground(Color.LIGHT_GRAY);
-		contentPane.add(txtrMalmFc);
+		ScrollPane scrollPane = new ScrollPane();
+		contentPane.add(scrollPane, BorderLayout.CENTER);
 		
-		JMenuBar menuBar = new JMenuBar();
-		contentPane.add(menuBar);
-		
-		Box verticalBox = Box.createVerticalBox();
-		verticalBox.setBackground(new Color(0, 51, 0));
-		contentPane.add(verticalBox);
+		JPopupMenu popupMenu = new JPopupMenu();
+		addPopup(scrollPane, popupMenu);
 	}
 
+	private static void addPopup(Component component, final JPopupMenu popup) {
+		component.addMouseListener(new MouseAdapter() {
+			public void mousePressed(MouseEvent e) {
+				if (e.isPopupTrigger()) {
+					showMenu(e);
+				}
+			}
+			public void mouseReleased(MouseEvent e) {
+				if (e.isPopupTrigger()) {
+					showMenu(e);
+				}
+			}
+			private void showMenu(MouseEvent e) {
+				popup.show(e.getComponent(), e.getX(), e.getY());
+			}
+		});
+	}
 }
