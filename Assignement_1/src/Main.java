@@ -103,16 +103,6 @@ public class Main extends JFrame {
 		scrollPane.setBounds(25, 117, 100, 205);
 		contentPane.add(scrollPane);
 		
-		JMenu mnArkiv = new JMenu("ARKIV");
-		mnArkiv.setBounds(15, 13, 331, 24);
-		contentPane.add(mnArkiv);
-		
-		JPopupMenu popupMenu = new JPopupMenu();
-		popupMenu.setBackground(new Color(204, 204, 255));
-		popupMenu.setPopupSize(new Dimension(6, 6));
-		popupMenu.setLabel("");
-		addPopup(mnArkiv, popupMenu);
-		
 		JLabel lblNewLabel_1 = new JLabel("Profilbild");
 		lblNewLabel_1.setVerticalAlignment(SwingConstants.BOTTOM);
 		lblNewLabel_1.setIcon(new ImageIcon("C:\\Users\\KGB\\Documents\\eclipse\\profilbild.jpg"));
@@ -188,14 +178,6 @@ public class Main extends JFrame {
 		lblNewLabel_8.setBounds(392, 297, 56, 24);
 		contentPane.add(lblNewLabel_8);
 		
-		JLabel lblNewLabel_2 = new JLabel("Bakgrund");
-		lblNewLabel_2.setFont(new Font("Source Sans Pro Light", Font.PLAIN, 20));
-		lblNewLabel_2.setForeground(new Color(0, 0, 0));
-		lblNewLabel_2.setVerticalAlignment(SwingConstants.TOP);
-		lblNewLabel_2.setIcon(new ImageIcon("C:\\Users\\KGB\\Documents\\eclipse\\sport.jpg"));
-		lblNewLabel_2.setBounds(0, 0, 554, 451);
-		contentPane.add(lblNewLabel_2);
-		
 		JEditorPane editorPane = new JEditorPane();
 		editorPane.setBackground(new Color(204, 204, 255));
 		editorPane.setBounds(424, 297, 106, 22);
@@ -205,23 +187,58 @@ public class Main extends JFrame {
 		editorPane_6.setBackground(new Color(204, 204, 255));
 		editorPane_6.setBounds(424, 297, 106, 22);
 		contentPane.add(editorPane_6);
+		
+		JMenuBar menuBar = new JMenuBar();
+		menuBar.setBounds(25, 13, 119, 26);
+		contentPane.add(menuBar);
+		
+		JMenu mnNewMenu = new JMenu("ARKIV");
+		mnNewMenu.setSelectedIcon(new ImageIcon("C:\\Users\\KGB\\Documents\\eclipse\\tool1285.png"));
+		mnNewMenu.setBackground(new Color(0, 0, 0));
+		mnNewMenu.setIcon(new ImageIcon("C:\\Users\\KGB\\Documents\\eclipse\\tool1285.png"));
+		menuBar.add(mnNewMenu);
+		
+		JMenu mnNewMenu_1 = new JMenu("New menu");
+		mnNewMenu_1.setIcon(new ImageIcon("C:\\Users\\KGB\\Documents\\eclipse\\printer67.png"));
+		mnNewMenu.add(mnNewMenu_1);
+		
+		JMenu mnNewMenu_2 = new JMenu("AVSLUTA");
+		mnNewMenu_2.setFont(new Font("Segoe UI", Font.BOLD, 15));
+		mnNewMenu_1.add(mnNewMenu_2);
+		
+		JMenuBar menuBar_1 = new JMenuBar();
+		menuBar_1.setBounds(407, 13, 119, 26);
+		contentPane.add(menuBar_1);
+		
+		JMenu mnNewMenu_3 = new JMenu("MEDLEM");
+		mnNewMenu_3.setIcon(new ImageIcon("C:\\Users\\KGB\\Documents\\eclipse\\social20.png"));
+		mnNewMenu_3.setFont(new Font("Segoe UI", Font.BOLD, 15));
+		mnNewMenu_3.setBounds(156, 13, 123, 24);
+		contentPane.add(mnNewMenu_3);
+		
+		JMenu mnNewMenu_4 = new JMenu("Ny medlem");
+		mnNewMenu_3.add(mnNewMenu_4);
+		
+		JMenu mnNewMenu_5 = new JMenu("Hitta medlem");
+		mnNewMenu_5.setIcon(new ImageIcon("C:\\Users\\KGB\\Documents\\eclipse\\magnifying-glass32.png"));
+		mnNewMenu_4.add(mnNewMenu_5);
+		
+		JMenu mnNewMenu_6 = new JMenu("HJ\u00C4LP");
+		mnNewMenu_6.setFont(new Font("Segoe UI", Font.BOLD, 15));
+		mnNewMenu_6.setIcon(new ImageIcon("C:\\Users\\KGB\\Documents\\eclipse\\question13.png"));
+		mnNewMenu_6.setBounds(301, 14, 123, 25);
+		contentPane.add(mnNewMenu_6);
+		
+		JMenu mnNewMenu_7 = new JMenu("Om programmet");
+		mnNewMenu_6.add(mnNewMenu_7);
+		
+		JLabel lblNewLabel_2 = new JLabel("New label");
+		lblNewLabel_2.setVerticalAlignment(SwingConstants.TOP);
+		lblNewLabel_2.setIcon(new ImageIcon("C:\\Users\\KGB\\Documents\\eclipse\\sport.jpg"));
+		lblNewLabel_2.setBounds(0, 0, 554, 451);
+		contentPane.add(lblNewLabel_2);
 	}
 
 	private static void addPopup(Component component, final JPopupMenu popup) {
-		component.addMouseListener(new MouseAdapter() {
-			public void mousePressed(MouseEvent e) {
-				if (e.isPopupTrigger()) {
-					showMenu(e);
-				}
-			}
-			public void mouseReleased(MouseEvent e) {
-				if (e.isPopupTrigger()) {
-					showMenu(e);
-				}
-			}
-			private void showMenu(MouseEvent e) {
-				popup.show(e.getComponent(), e.getX(), e.getY());
-			}
-		});
 	}
 }
