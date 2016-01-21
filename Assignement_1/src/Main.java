@@ -62,7 +62,7 @@ public class Main extends JFrame {
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 572, 498);
 		contentPane = new JPanel();
-		contentPane.setBackground(new Color(255, 255, 204));
+		contentPane.setBackground(Color.WHITE);
 		contentPane.setForeground(Color.WHITE);
 		contentPane.setToolTipText("");
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
@@ -125,7 +125,7 @@ public class Main extends JFrame {
 		
 		JLabel lblNewLabel_1 = new JLabel("New label");
 		lblNewLabel_1.setVerticalAlignment(SwingConstants.BOTTOM);
-		lblNewLabel_1.setIcon(new ImageIcon("C:\\Users\\KGB\\Documents\\eclipse\\profil.jpg"));
+		lblNewLabel_1.setIcon(new ImageIcon("C:\\Users\\KGB\\Documents\\eclipse\\profilbild.jpg"));
 		lblNewLabel_1.setBounds(197, 43, 184, 205);
 		contentPane.add(lblNewLabel_1);
 		
@@ -133,6 +133,12 @@ public class Main extends JFrame {
 		lblJananderssongmailcom.setFont(new Font("Source Sans Pro Light", Font.PLAIN, 13));
 		lblJananderssongmailcom.setBounds(407, 222, 147, 16);
 		contentPane.add(lblJananderssongmailcom);
+		
+		JLabel lblNewLabel_2 = new JLabel("New label");
+		lblNewLabel_2.setVerticalAlignment(SwingConstants.TOP);
+		lblNewLabel_2.setIcon(new ImageIcon("C:\\Users\\KGB\\Documents\\eclipse\\sport.jpg"));
+		lblNewLabel_2.setBounds(0, 0, 554, 451);
+		contentPane.add(lblNewLabel_2);
 	}
 
 	private static void addPopup(Component component, final JPopupMenu popup) {
