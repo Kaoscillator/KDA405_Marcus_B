@@ -52,22 +52,6 @@ public class Main extends JFrame {
 		
 		JMenuBar menuBar = new JMenuBar();
 		setJMenuBar(menuBar);
-		
-		Button button = new Button("ARKIV");
-		button.setBackground(new Color(102, 153, 204));
-		button.setActionCommand("ARKIV");
-		button.setFont(new Font("SansSerif", Font.PLAIN, 12));
-		menuBar.add(button);
-		
-		Button button_1 = new Button("MEDLEM");
-		button_1.setBackground(new Color(102, 153, 204));
-		button_1.setFont(new Font("SansSerif", Font.PLAIN, 12));
-		menuBar.add(button_1);
-		
-		Button button_2 = new Button("HJ\u00C4LP");
-		button_2.setBackground(new Color(102, 153, 204));
-		button_2.setFont(new Font("SansSerif", Font.PLAIN, 12));
-		menuBar.add(button_2);
 		contentPane = new JPanel();
 		contentPane.setBackground(new Color(102, 153, 204));
 		contentPane.setForeground(Color.WHITE);
@@ -78,9 +62,6 @@ public class Main extends JFrame {
 		
 		ScrollPane scrollPane = new ScrollPane();
 		contentPane.add(scrollPane, BorderLayout.CENTER);
-		
-		JPopupMenu popupMenu = new JPopupMenu();
-		addPopup(scrollPane, popupMenu);
 	}
 
 	private static void addPopup(Component component, final JPopupMenu popup) {
