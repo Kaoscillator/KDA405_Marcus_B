@@ -33,6 +33,7 @@ import javax.swing.ListSelectionModel;
 import javax.swing.JMenu;
 import javax.swing.table.DefaultTableModel;
 import javax.swing.JComboBox;
+import javax.swing.JButton;
 
 public class Main extends JFrame {
 
@@ -92,11 +93,11 @@ public class Main extends JFrame {
 				"New column", "New column"
 			}
 		));
-		table.setBounds(15, 43, 100, 205);
+		table.setBounds(25, 117, 100, 205);
 		contentPane.add(table);
 		
 		ScrollPane scrollPane = new ScrollPane();
-		scrollPane.setBounds(15, 43, 100, 205);
+		scrollPane.setBounds(25, 117, 100, 205);
 		contentPane.add(scrollPane);
 		
 		JMenu mnArkiv = new JMenu("ARKIV");
@@ -104,35 +105,43 @@ public class Main extends JFrame {
 		contentPane.add(mnArkiv);
 		
 		JLabel lblJanAndersson = new JLabel("Jan Andersson");
-		lblJanAndersson.setFont(new Font("Source Sans Pro Light", Font.PLAIN, 13));
-		lblJanAndersson.setBounds(407, 106, 106, 16);
+		lblJanAndersson.setFont(new Font("Source Sans Pro Light", Font.PLAIN, 19));
+		lblJanAndersson.setBounds(392, 117, 135, 16);
 		contentPane.add(lblJanAndersson);
 		
 		JLabel lblNewLabel = new JLabel("620809-4098");
 		lblNewLabel.setFont(new Font("Source Sans Pro Light", Font.PLAIN, 13));
-		lblNewLabel.setBounds(407, 135, 106, 16);
+		lblNewLabel.setBounds(392, 235, 106, 16);
 		contentPane.add(lblNewLabel);
 		
 		JLabel lblSrmlandsgatan = new JLabel("S\u00F6rmlandsgatan 12");
 		lblSrmlandsgatan.setFont(new Font("Source Sans Pro Light", Font.PLAIN, 13));
-		lblSrmlandsgatan.setBounds(407, 164, 135, 16);
+		lblSrmlandsgatan.setBounds(392, 164, 135, 16);
 		contentPane.add(lblSrmlandsgatan);
 		
 		JLabel lblMalm = new JLabel("214 33 Malm\u00F6");
 		lblMalm.setFont(new Font("Source Sans Pro Light", Font.PLAIN, 13));
-		lblMalm.setBounds(407, 193, 106, 16);
+		lblMalm.setBounds(392, 146, 106, 16);
 		contentPane.add(lblMalm);
 		
 		JLabel lblNewLabel_1 = new JLabel("New label");
 		lblNewLabel_1.setVerticalAlignment(SwingConstants.BOTTOM);
 		lblNewLabel_1.setIcon(new ImageIcon("C:\\Users\\KGB\\Documents\\eclipse\\profilbild.jpg"));
-		lblNewLabel_1.setBounds(197, 43, 184, 205);
+		lblNewLabel_1.setBounds(196, 117, 184, 205);
 		contentPane.add(lblNewLabel_1);
 		
 		JLabel lblJananderssongmailcom = new JLabel("jan.andersson@gmail.com");
 		lblJananderssongmailcom.setFont(new Font("Source Sans Pro Light", Font.PLAIN, 13));
-		lblJananderssongmailcom.setBounds(407, 222, 147, 16);
+		lblJananderssongmailcom.setBounds(392, 299, 147, 16);
 		contentPane.add(lblJananderssongmailcom);
+		
+		JButton btnNewButton = new JButton("SPARA");
+		btnNewButton.setBounds(433, 413, 97, 25);
+		contentPane.add(btnNewButton);
+		
+		JLabel lblNewLabel_3 = new JLabel("0709-666777");
+		lblNewLabel_3.setBounds(392, 189, 111, 16);
+		contentPane.add(lblNewLabel_3);
 		
 		JLabel lblNewLabel_2 = new JLabel("New label");
 		lblNewLabel_2.setVerticalAlignment(SwingConstants.TOP);
