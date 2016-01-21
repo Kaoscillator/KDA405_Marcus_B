@@ -72,10 +72,10 @@ public class Main extends JFrame {
 		setContentPane(contentPane);
 		contentPane.setLayout(null);
 		
-		JLabel lblNewLabel_9 = new JLabel("BASEBALL CLUB");
+		JLabel lblNewLabel_9 = new JLabel("BASEBALL CLUB Malmo");
 		lblNewLabel_9.setFont(new Font("Tahoma", Font.BOLD | Font.ITALIC, 17));
 		lblNewLabel_9.setIcon(new ImageIcon("C:\\Users\\KGB\\Documents\\eclipse\\sports ball19.png"));
-		lblNewLabel_9.setBounds(39, 358, 201, 60);
+		lblNewLabel_9.setBounds(39, 358, 240, 60);
 		contentPane.add(lblNewLabel_9);
 		
 		table = new JTable();
@@ -182,7 +182,7 @@ public class Main extends JFrame {
 		
 		JLabel lblNewLabel_8 = new JLabel("");
 		lblNewLabel_8.setIcon(new ImageIcon("C:\\Users\\KGB\\Documents\\eclipse\\mail59.png"));
-		lblNewLabel_8.setBounds(362, 298, 56, 24);
+		lblNewLabel_8.setBounds(352, 297, 56, 24);
 		contentPane.add(lblNewLabel_8);
 		
 		JEditorPane editorPane_6 = new JEditorPane();
@@ -233,6 +233,18 @@ public class Main extends JFrame {
 		
 		JMenu mnNewMenu_7 = new JMenu("Om programmet");
 		mnNewMenu_6.add(mnNewMenu_7);
+		
+		JLabel lblNewLabel_10 = new JLabel("Medlem nr:");
+		lblNewLabel_10.setFont(new Font("Source Sans Pro Light", Font.BOLD, 19));
+		lblNewLabel_10.setBounds(156, 88, 184, 16);
+		contentPane.add(lblNewLabel_10);
+		
+		JEditorPane editorPane = new JEditorPane();
+		editorPane.setBackground(new Color(204, 204, 255));
+		editorPane.setFont(new Font("Tahoma", Font.BOLD, 17));
+		editorPane.setText("1");
+		editorPane.setBounds(407, 82, 123, 22);
+		contentPane.add(editorPane);
 		
 		JLabel lblNewLabel_2 = new JLabel("New label");
 		lblNewLabel_2.setVerticalAlignment(SwingConstants.TOP);
