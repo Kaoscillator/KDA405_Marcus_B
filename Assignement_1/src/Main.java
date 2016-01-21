@@ -72,6 +72,12 @@ public class Main extends JFrame {
 		setContentPane(contentPane);
 		contentPane.setLayout(null);
 		
+		JLabel lblNewLabel_9 = new JLabel("BASEBALL CLUB");
+		lblNewLabel_9.setFont(new Font("Tahoma", Font.BOLD | Font.ITALIC, 17));
+		lblNewLabel_9.setIcon(new ImageIcon("C:\\Users\\KGB\\Documents\\eclipse\\sports ball19.png"));
+		lblNewLabel_9.setBounds(39, 358, 201, 60);
+		contentPane.add(lblNewLabel_9);
+		
 		table = new JTable();
 		table.setBackground(new Color(204, 204, 255));
 		table.setForeground(Color.GRAY);
@@ -106,7 +112,7 @@ public class Main extends JFrame {
 		JLabel lblNewLabel_1 = new JLabel("Profilbild");
 		lblNewLabel_1.setVerticalAlignment(SwingConstants.BOTTOM);
 		lblNewLabel_1.setIcon(new ImageIcon("C:\\Users\\KGB\\Documents\\eclipse\\profilbild.jpg"));
-		lblNewLabel_1.setBounds(196, 117, 184, 205);
+		lblNewLabel_1.setBounds(156, 117, 184, 205);
 		contentPane.add(lblNewLabel_1);
 		
 		JButton btnNewButton = new JButton("SPARA");
@@ -119,73 +125,69 @@ public class Main extends JFrame {
 		dtrpnJanaAndersson.setBackground(new Color(204, 204, 255));
 		dtrpnJanaAndersson.setFont(new Font("Source Sans Pro Light", Font.PLAIN, 17));
 		dtrpnJanaAndersson.setText("Jana Andersson");
-		dtrpnJanaAndersson.setBounds(433, 117, 121, 22);
+		dtrpnJanaAndersson.setBounds(407, 117, 121, 22);
 		contentPane.add(dtrpnJanaAndersson);
 		
 		JLabel lblNewLabel = new JLabel("Namn:");
-		lblNewLabel.setBounds(389, 116, 56, 16);
+		lblNewLabel.setBounds(352, 116, 56, 16);
 		contentPane.add(lblNewLabel);
 		
 		JLabel lblNewLabel_3 = new JLabel("Adress:");
-		lblNewLabel_3.setBounds(389, 152, 56, 16);
+		lblNewLabel_3.setBounds(352, 152, 56, 16);
 		contentPane.add(lblNewLabel_3);
 		
 		JLabel lblNewLabel_4 = new JLabel("Postnr:");
-		lblNewLabel_4.setBounds(392, 181, 56, 16);
+		lblNewLabel_4.setBounds(352, 181, 56, 16);
 		contentPane.add(lblNewLabel_4);
 		
 		JLabel lblNewLabel_5 = new JLabel("Ort:");
-		lblNewLabel_5.setBounds(389, 210, 56, 16);
+		lblNewLabel_5.setBounds(352, 210, 56, 16);
 		contentPane.add(lblNewLabel_5);
 		
 		JLabel lblNewLabel_6 = new JLabel("Personnr:");
-		lblNewLabel_6.setBounds(389, 239, 43, 16);
+		lblNewLabel_6.setBounds(352, 239, 43, 16);
 		contentPane.add(lblNewLabel_6);
 		
 		JLabel lblNewLabel_7 = new JLabel("");
 		lblNewLabel_7.setIcon(new ImageIcon("C:\\Users\\KGB\\Documents\\eclipse\\telephone46 (1).png"));
-		lblNewLabel_7.setBounds(392, 268, 56, 16);
+		lblNewLabel_7.setBounds(352, 268, 56, 16);
 		contentPane.add(lblNewLabel_7);
 		
 		JEditorPane editorPane_1 = new JEditorPane();
+		editorPane_1.setFont(new Font("Tahoma", Font.PLAIN, 13));
 		editorPane_1.setBackground(new Color(204, 204, 255));
 		editorPane_1.setForeground(new Color(204, 204, 255));
-		editorPane_1.setBounds(433, 146, 106, 22);
+		editorPane_1.setBounds(407, 146, 123, 22);
 		contentPane.add(editorPane_1);
 		
 		JEditorPane editorPane_2 = new JEditorPane();
 		editorPane_2.setBackground(new Color(204, 204, 255));
-		editorPane_2.setBounds(433, 181, 106, 22);
+		editorPane_2.setBounds(407, 175, 123, 22);
 		contentPane.add(editorPane_2);
 		
 		JEditorPane editorPane_3 = new JEditorPane();
 		editorPane_3.setBackground(new Color(204, 204, 255));
-		editorPane_3.setBounds(433, 210, 106, 22);
+		editorPane_3.setBounds(407, 204, 123, 22);
 		contentPane.add(editorPane_3);
 		
 		JEditorPane editorPane_4 = new JEditorPane();
 		editorPane_4.setBackground(new Color(204, 204, 255));
-		editorPane_4.setBounds(433, 233, 106, 22);
+		editorPane_4.setBounds(407, 233, 123, 22);
 		contentPane.add(editorPane_4);
 		
 		JEditorPane editorPane_5 = new JEditorPane();
 		editorPane_5.setBackground(new Color(204, 204, 255));
-		editorPane_5.setBounds(433, 262, 106, 22);
+		editorPane_5.setBounds(407, 262, 123, 22);
 		contentPane.add(editorPane_5);
 		
 		JLabel lblNewLabel_8 = new JLabel("");
 		lblNewLabel_8.setIcon(new ImageIcon("C:\\Users\\KGB\\Documents\\eclipse\\mail59.png"));
-		lblNewLabel_8.setBounds(392, 297, 56, 24);
+		lblNewLabel_8.setBounds(362, 298, 56, 24);
 		contentPane.add(lblNewLabel_8);
-		
-		JEditorPane editorPane = new JEditorPane();
-		editorPane.setBackground(new Color(204, 204, 255));
-		editorPane.setBounds(424, 297, 106, 22);
-		contentPane.add(editorPane);
 		
 		JEditorPane editorPane_6 = new JEditorPane();
 		editorPane_6.setBackground(new Color(204, 204, 255));
-		editorPane_6.setBounds(424, 297, 106, 22);
+		editorPane_6.setBounds(407, 300, 121, 22);
 		contentPane.add(editorPane_6);
 		
 		JMenuBar menuBar = new JMenuBar();
