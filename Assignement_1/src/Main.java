@@ -165,7 +165,7 @@ public class Main extends JFrame {
 		JEditorPane editorPane_1 = new JEditorPane();
 		editorPane_1.setFont(new Font("Tahoma", Font.PLAIN, 13));
 		editorPane_1.setBackground(new Color(204, 204, 255));
-		editorPane_1.setForeground(new Color(204, 204, 255));
+		editorPane_1.setForeground(Color.BLACK);
 		editorPane_1.setBounds(407, 146, 123, 22);
 		contentPane.add(editorPane_1);
 		
