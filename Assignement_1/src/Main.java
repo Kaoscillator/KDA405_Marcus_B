@@ -78,36 +78,45 @@ public class Main extends JFrame {
 		lblNewLabel_9.setBounds(39, 358, 240, 60);
 		contentPane.add(lblNewLabel_9);
 		
+		JPanel panel = new JPanel();
+		panel.setBounds(0, 117, 144, 205);
+		contentPane.add(panel);
+		panel.setLayout(null);
+		
+		JScrollPane scrollPane_1 = new JScrollPane();
+		scrollPane_1.setBounds(0, 0, 144, 205);
+		panel.add(scrollPane_1);
+		
 		table = new JTable();
-		table.setBackground(new Color(204, 204, 255));
-		table.setForeground(Color.GRAY);
+		scrollPane_1.setViewportView(table);
 		table.setModel(new DefaultTableModel(
 			new Object[][] {
-				{"Andersson", "Jan"},
-				{"Bengtsson", "Sanne"},
-				{"Danske", "Liridon"},
-				{"Hansson", "Bruno"},
-				{"Herald", "Poppy"},
-				{"Isaksson", "Lars"},
-				{"Jazz", "Toni"},
-				{"Kittel", "Tom"},
-				{"Mauritzon", "Karin"},
-				{"M\u00E5rtensson", null},
+				{"Andersso", "Jana"},
+				{"Anapurna", "Sikh"},
+				{"Aruna", "Jeff"},
+				{"Bobbi", "Bob"},
+				{"Cartsens", "Monica"},
+				{"Carl\u00E9n", "Poppi"},
+				{"Dans\u00E4ter", "Virre"},
+				{"Eriksson", "Erka"},
+				{"Fabianus", "Ladislaous"},
+				{"Gustavsson", "Carl"},
+				{"Hansson", "Ina"},
+				{"Hobert", "Madde"},
+				{"Isaksson", "Ronny"},
+				{"Jeffson", null},
+				{null, null},
+				{"g", null},
+				{null, null},
 				{null, null},
 				{null, null},
 				{null, null},
 				{null, null},
 			},
 			new String[] {
-				"New column", "New column"
+				"Efternamn", "Förnamn"
 			}
 		));
-		table.setBounds(25, 117, 100, 205);
-		contentPane.add(table);
-		
-		ScrollPane scrollPane = new ScrollPane();
-		scrollPane.setBounds(25, 117, 100, 205);
-		contentPane.add(scrollPane);
 		
 		JLabel lblNewLabel_1 = new JLabel("Profilbild");
 		lblNewLabel_1.setVerticalAlignment(SwingConstants.BOTTOM);
@@ -215,7 +224,7 @@ public class Main extends JFrame {
 		JMenu mnNewMenu_3 = new JMenu("MEDLEM");
 		mnNewMenu_3.setIcon(new ImageIcon("C:\\Users\\KGB\\Documents\\eclipse\\social20.png"));
 		mnNewMenu_3.setFont(new Font("Segoe UI", Font.BOLD, 15));
-		mnNewMenu_3.setBounds(156, 13, 123, 24);
+		mnNewMenu_3.setBounds(170, 13, 123, 24);
 		contentPane.add(mnNewMenu_3);
 		
 		JMenu mnNewMenu_4 = new JMenu("Ny medlem");
@@ -228,23 +237,11 @@ public class Main extends JFrame {
 		JMenu mnNewMenu_6 = new JMenu("HJ\u00C4LP");
 		mnNewMenu_6.setFont(new Font("Segoe UI", Font.BOLD, 15));
 		mnNewMenu_6.setIcon(new ImageIcon("C:\\Users\\KGB\\Documents\\eclipse\\question13.png"));
-		mnNewMenu_6.setBounds(301, 14, 123, 25);
+		mnNewMenu_6.setBounds(320, 13, 123, 25);
 		contentPane.add(mnNewMenu_6);
 		
 		JMenu mnNewMenu_7 = new JMenu("Om programmet");
 		mnNewMenu_6.add(mnNewMenu_7);
-		
-		JLabel lblNewLabel_10 = new JLabel("Medlem nr:");
-		lblNewLabel_10.setFont(new Font("Source Sans Pro Light", Font.BOLD, 19));
-		lblNewLabel_10.setBounds(156, 88, 184, 16);
-		contentPane.add(lblNewLabel_10);
-		
-		JEditorPane editorPane = new JEditorPane();
-		editorPane.setBackground(new Color(204, 204, 255));
-		editorPane.setFont(new Font("Tahoma", Font.BOLD, 17));
-		editorPane.setText("1");
-		editorPane.setBounds(407, 82, 123, 22);
-		contentPane.add(editorPane);
 		
 		JLabel lblNewLabel_2 = new JLabel("New label");
 		lblNewLabel_2.setVerticalAlignment(SwingConstants.TOP);
