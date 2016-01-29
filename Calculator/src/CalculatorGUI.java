@@ -53,6 +53,8 @@ public class CalculatorGUI extends JFrame {
 		myCalculator = new Calculator();
 		
 		JTextArea textArea = new JTextArea();
+		textArea.setLineWrap(true);
+		textArea.setFont(new Font("Calibri", Font.BOLD, 60));
 		
 		
 
@@ -79,9 +81,6 @@ public class CalculatorGUI extends JFrame {
 				myCalculator.plus();
 			}
 		});
-		
-		
-		textArea.setRows(10);
 		textArea.setForeground(Color.ORANGE);
 		textArea.setBounds(79, 115, 313, 126);
 		contentPane.add(textArea);
@@ -95,6 +94,7 @@ public class CalculatorGUI extends JFrame {
 			public void actionPerformed(ActionEvent e) {
 				myCalculator.equals();
 				int i = myCalculator.getResult();
+				
 				textArea.setText(String.valueOf(i));
 			}
 		});
