@@ -1,0 +1,29 @@
+/*a)
+
+public class House {/*instansvariabler*/
+	private int yearBuilt;
+	private int size;
+	private final int minSize = 10;
+
+b)	public House(int yearBuilt,int size) {
+		this.yearBuilt = yearBuilt;// TODO Auto-generated constructor stub KONSTRUKTOR/variabler
+	this.size = 0;
+	}
+c) public int getYearBuilt(){/*instansmetoder*/
+	return this.yearBuilt;
+}
+	
+
+public int getSize(){
+	return this.size;
+	
+}
+}
+
+d) Final innebär att man inte kan ändra mer i den. 
+ 
+e) Private innebär att dessa kan inte nås och inte editeras av andra,  Man kan inte ändra i dem. De är omutbara..
+Public innebär att de kan nås och att den endast är synlig 
+i egen klass.
+f)
+g)*/
