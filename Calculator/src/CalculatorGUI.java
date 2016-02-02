@@ -264,7 +264,7 @@ public class CalculatorGUI extends JFrame {
 		JLabel lblNewLabel = new JLabel("C");
 		lblNewLabel.setHorizontalAlignment(SwingConstants.CENTER);
 		lblNewLabel.setBackground(Color.WHITE);
-		lblNewLabel.setIcon(new ImageIcon("C:\\Users\\KGB\\Desktop\\Programmering II\\Assignement2\\Calculatormerr\u00E4tt.png"));
+		lblNewLabel.setIcon(new ImageIcon(CalculatorGUI.class.getResource("/images/Calculatormerr\u00E4tt.png")));
 		lblNewLabel.setBounds(12, 37, 468, 573);
 		contentPane.add(lblNewLabel);
 

@@ -63,6 +63,7 @@ public class housegui extends JFrame {
 	House myHouse2 = new House (1990,600);
 	House myHouse3 = new House (2014,800);
 	
+	
 	System.out.println("Hus ett är byggt " + myHouse1.getYearBuilt() + " som är " + myHouse1.getSize()+ " stort.");
 	System.out.println("Hus två är byggt " + myHouse2.getYearBuilt() + " som är " + myHouse2.getSize()+ " stort.");
 	System.out.println("Hus tre är byggt " + myHouse3.getYearBuilt() + " som är " + myHouse3.getSize()+ " stort.");
@@ -73,7 +74,7 @@ public class housegui extends JFrame {
 	
 	myHouses = new House [10];
 	
-	myHouses [0] = new House (1857, 200);
+	myHouses [0] = new House (1857, 200);/*arrayList*/
 	myHouses [1]= new House (1950, 234);
 	myHouses [2]= new House (1967, 150);
 	myHouses [3]= new House (1987, 167);
