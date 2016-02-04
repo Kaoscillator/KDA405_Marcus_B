@@ -2,33 +2,53 @@ package Bader;
 
 import java.util.ArrayList;
 
-public class Shop {
-	
-	/*private ArrayList <MainBike> allBikes;*/
-	/*private MainBike [] myBikes;*/
-	private ArrayList<MainBike> allBikes  = new ArrayList<MainBike>();
-	private String name;
-	
-	
-	
-	
-	
-	// TODO Auto-generated constructor stub
 
+public class Shop{
+	
+	private ArrayList <MainBike> allBikes;
+	private String myBikes;
+	//private String name;
+	
+	
+	public Shop(String myBikes){
+		this.allBikes = new ArrayList<MainBike>();
+		this.myBikes =  myBikes;
+		
 	
 		
-		public MainBike(String name){
-			this.allBikes = new ArrayList<MainBike>();
-			this.name = name;
-		}
+	}
+	   // TODO Auto-generated constructor stub
+	
+
+
 	public void allBikes(MainBike c){
-		if (allBikes.size()<101){
+		if (allBikes.size()<11){
 			this.allBikes.add(c);
 		}
 		
 	}
 	
-}
+	public String getPrice() {
+		return myBikes;
+	}
+	public void setName(String myBikes) {
+		this.myBikes = myBikes;
+	}
+
+	public void button(){
+		allBikes.remove(0);
+	}
+
+/*public String getMainBikes(){
+		String s = this.myBikes +"\n";
+		for (MainBike cat : allBikes){
+			s = s + "Name" + allBikes.getPrice() + "Age:"+ allBikes.getSize() + allBikes.getColor() + "\n";
+			
+		}
+		return s;*/
+	
+	}
+
 	
 	
 	

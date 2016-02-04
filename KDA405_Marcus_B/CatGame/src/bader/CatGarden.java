@@ -1,7 +1,7 @@
 package bader;
 
 import java.util.ArrayList;
-
+import java.util.Iterator;
 
 public class CatGarden {
 	private ArrayList <Cat> allCats;
