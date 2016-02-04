@@ -14,13 +14,8 @@ public class Shop{
 		this.allBikes = new ArrayList<MainBike>();
 		this.myBikes =  myBikes;
 		
-	
-		
 	}
 	   // TODO Auto-generated constructor stub
-	
-
-
 	public void allBikes(MainBike c){
 		if (allBikes.size()<11){
 			this.allBikes.add(c);
@@ -39,15 +34,18 @@ public class Shop{
 		allBikes.remove(0);
 	}
 
-/*public String getMainBikes(){
+public String getMainBikes(){
 		String s = this.myBikes +"\n";
-		for (MainBike cat : allBikes){
+		for (MainBike allBikes : allBikes){
 			s = s + "Name" + allBikes.getPrice() + "Age:"+ allBikes.getSize() + allBikes.getColor() + "\n";
 			
+			
 		}
-		return s;*/
+		return s;
 	
 	}
+
+}
 
 	
 	

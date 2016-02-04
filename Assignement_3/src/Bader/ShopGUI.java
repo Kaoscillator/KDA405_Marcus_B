@@ -106,6 +106,7 @@ public class ShopGUI extends JFrame {
 		txtPris.setBounds(48, 160, 116, 22);
 		contentPane.add(txtPris);
 		
+		
 		textField_4 = new JTextField();
 		textField_4.setBackground(new Color(204, 204, 204));
 		textField_4.setColumns(10);
@@ -148,7 +149,7 @@ public class ShopGUI extends JFrame {
 		textArea_6.setBounds(420, 183, 116, 22);
 		contentPane.add(textArea_6);
 		
-		JButton btnNewButton = new JButton("Delete");
+		JButton btnNewButton = new JButton("Clear");
 		btnNewButton.setForeground(new Color(51, 51, 51));
 		btnNewButton.setBackground(new Color(240, 240, 240));
 		btnNewButton.setFont(new Font("Lucida Sans", Font.PLAIN, 18));
@@ -162,8 +163,5 @@ public class ShopGUI extends JFrame {
 		contentPane.add(lblNewLabel);
 	}
 
-	private String getallBikes() {
-		// TODO Auto-generated method stub
-		return null;
-	}
+	
 }

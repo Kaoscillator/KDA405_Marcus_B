@@ -2,6 +2,8 @@ package Bader;
 
 //import java.util.ArrayList;
 
+
+
 public class MainBike {
 	
 	
@@ -9,6 +11,9 @@ public class MainBike {
 	private int price = 0;
 	private int size = 0;
 	private String name = "No name";
+	
+	
+	
 	
 	public MainBike(){
 		
@@ -36,7 +41,7 @@ public class MainBike {
 	}
 	
 	public void setPrice1(int price){
-		if (price>0 && price <= constants.MAX_PRICE){
+		if (price>0 && price <= constants.MAX_PRICE()){
 			this.MAX_PRICE = price;
 		}
 	}
