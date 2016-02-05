@@ -5,6 +5,10 @@ import java.util.ArrayList;
 
 public class Shop{
 	
+	public Shop(){
+		
+	}
+	
 	private ArrayList <MainBike> allBikes;
 	private String myBikes;
 	//private String name;
@@ -43,7 +47,13 @@ public String getMainBikes(){
 		}
 		return s;
 	
+	
 	}
+
+public void addBike (String color, int size, int price){
+	MainBike b = new MainBike (color,size,price);
+	this.allBikes.add(b);
+}
 
 }
 

@@ -10,6 +10,7 @@ public class constants {
 	public static final int MIN_SIZE = 8;
 	
 	public static final String [] COLORS = {"blue","red", "yellow", "black", "orange", "grey"};
+	
 		
 		
 	}

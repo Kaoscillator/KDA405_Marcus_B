@@ -1,5 +1,7 @@
 package Bader;
 
+import com.sun.org.apache.bcel.internal.Constants;
+
 //import java.util.ArrayList;
 
 
@@ -13,23 +15,42 @@ public class MainBike {
 	//private String name= "No name";
 	
 	
-	
-	
-	public MainBike(){
-		
-	
-		
-	}
-	
-	
-	public MainBike(String color, int size) {
+	//public MainBike(String color, int size) {
 		// TODO Auto-generated constructor stub
-	}
+		
+		/**Creates a new bike with two instance variables, color (String) and size (int). */
+		public MainBike(String color, int size){  //**konstruktor*/
+			this.size = size;
+
+			
+			 /**Loops through colors to check if a color is set in the Constants.java*/
+			boolean trueColor = false;
+			for (int i = 0; i < constants.COLORS.length; i++){
+				if (constants.COLORS[i].equals(color)) {
+					trueColor = true;
+				}
+			}
+			/**If a color is the same as one of the colors in Constants.java, */
+			if (trueColor == true) {
+				this.color = color;
+			} else {
+				this.color = "404 - Color not found!";
+			}
+			
+			if (size>= constants.MIN_SIZE && size<= constants.MAX_SIZE){
+				this.size = size;
+			}else{
+				this.size = 0;
+			}
+		}
+	
 	
 	public MainBike (String color, int size, int price){
 		this.color = color;
 		this.size = size;
 		this.price = price;
+		
+		
 	}
 	
 

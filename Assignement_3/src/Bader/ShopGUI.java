@@ -27,6 +27,7 @@ public class ShopGUI extends JFrame {
 	private JTextField txtStorlek;
 	private JTextField txtFrg;
 	private JTextField txtPris;
+	private Shop bikeshop;
 
 	/**
 	 * Launch the application.
@@ -48,6 +49,8 @@ public class ShopGUI extends JFrame {
 	 * Create the frame.
 	 */
 	public ShopGUI() {
+		bikeshop = new Shop();
+		setTitle(" ");
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 601, 521);
 		contentPane = new JPanel();
@@ -64,9 +67,12 @@ public class ShopGUI extends JFrame {
 		scrollPane.setBounds(362, 125, 196, 192);
 		contentPane.add(scrollPane);
 		
+		
 		JTextArea textArea = new JTextArea();
+		textArea.setFont(new Font("Calibri", Font.PLAIN, 18));
 		textArea.setBackground(Color.LIGHT_GRAY);
 		scrollPane.setViewportView(textArea);
+		//textArea.setText(TestBike.bikesTest());
 		
 		txtStorlek = new JTextField();
 		txtStorlek.setFont(new Font("Calibri", Font.PLAIN, 18));
@@ -96,13 +102,18 @@ public class ShopGUI extends JFrame {
 		JButton btnNewButton = new JButton("NEUE BIKE");
 		btnNewButton.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
-				//String color = textField_1.getText();//sätter text
-				//textArea.setText(shop.getAllBikes)));
+				String color_1 = txtFrg.getText();//sätter text
+				int price_1 = Integer.parseInt(txtPris.getText());
+				int size_1 = Integer.parseInt (txtStorlek.getText());
+				bikeshop.addBike(color_1, size_1, price_1);
+				textArea.setText(bikeshop.getMainBikes());
+				
+		
 			}
 		});
 		btnNewButton.setForeground(new Color(51, 51, 51));
 		btnNewButton.setBackground(Color.LIGHT_GRAY);
-		btnNewButton.setFont(new Font("Lucida Sans", Font.BOLD, 16));
+		btnNewButton.setFont(new Font("Calibri", Font.BOLD | Font.ITALIC, 22));
 		btnNewButton.setBounds(198, 186, 129, 67);
 		contentPane.add(btnNewButton);
 		
