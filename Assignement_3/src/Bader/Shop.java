@@ -9,14 +9,14 @@ public class Shop{
 		
 	}
 	
-	private ArrayList <MainBike> allBikes;
-	private String myBikes;
+	private ArrayList <MainBike> allBikes = new ArrayList<MainBike>();
+	//private String myBikes;
 	//private String name;
 	
 	
 	public Shop(String myBikes){
 		this.allBikes = new ArrayList<MainBike>();
-		this.myBikes =  myBikes;
+		//this.myBikes =  myBikes;
 		
 	}
 	   // TODO Auto-generated constructor stub
@@ -27,22 +27,23 @@ public class Shop{
 		
 	}
 	
-	public String getPrice() {
+	/*public String getPrice() {
 		return myBikes;
 	}
 	public void setName(String myBikes) {
 		this.myBikes = myBikes;
-	}
+	}*/
 
 	public void button(){
 		allBikes.remove(0);
 	}
 
-public String getMainBikes(){
-		String s = this.myBikes +"\n";
-		for (MainBike allBikes : allBikes){
-			s = s + "Name" + allBikes.getPrice() + "Age:"+ allBikes.getSize() + allBikes.getColor() + "\n";
-			
+
+	public String getMainBikes(){
+		String s = "";
+		int counter = 1;
+		for (int i = 0; i<allBikes.size();i++){
+			s = s + "Bike no: " + (i +1) + " price: " + allBikes.get(i).getPrice() + " size: "+ allBikes.get(i).getSize() + " inches " + " Color " + allBikes.get(i).getColor() + "\n";
 			
 		}
 		return s;

@@ -69,14 +69,13 @@ public class ShopGUI extends JFrame {
 		
 		
 		JTextArea textArea = new JTextArea();
-		textArea.setFont(new Font("Calibri", Font.PLAIN, 18));
+		textArea.setFont(new Font("Calibri", Font.BOLD, 15));
 		textArea.setBackground(Color.LIGHT_GRAY);
 		scrollPane.setViewportView(textArea);
 		//textArea.setText(TestBike.bikesTest());
 		
 		txtStorlek = new JTextField();
 		txtStorlek.setFont(new Font("Calibri", Font.PLAIN, 18));
-		txtStorlek.setText("SIZE");
 		txtStorlek.setBackground(new Color(204, 204, 204));
 		txtStorlek.setColumns(10);
 		txtStorlek.setBounds(30, 221, 116, 22);
@@ -84,14 +83,12 @@ public class ShopGUI extends JFrame {
 		
 		txtFrg = new JTextField();
 		txtFrg.setFont(new Font("Calibri", Font.PLAIN, 18));
-		txtFrg.setText("COLOR");
 		txtFrg.setBackground(new Color(204, 204, 204));
 		txtFrg.setColumns(10);
 		txtFrg.setBounds(30, 295, 116, 22);
 		contentPane.add(txtFrg);
 		
 		txtPris = new JTextField();
-		txtPris.setText("PRICE");
 		txtPris.setForeground(new Color(0, 0, 0));
 		txtPris.setBackground(new Color(204, 204, 204));
 		txtPris.setFont(new Font("Calibri", Font.PLAIN, 18));
@@ -107,6 +104,9 @@ public class ShopGUI extends JFrame {
 				int size_1 = Integer.parseInt (txtStorlek.getText());
 				bikeshop.addBike(color_1, size_1, price_1);
 				textArea.setText(bikeshop.getMainBikes());
+				/*txtFrg.setText("");
+				txtStorlek.setText("");
+				txtPris.setText("");*/
 				
 		
 			}
