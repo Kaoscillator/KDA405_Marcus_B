@@ -7,27 +7,34 @@ package Bader;
 public class MainBike {
 	
 	
-	private String color = "BLUE"; //Classinstanser
-	private int price = 0;
-	private int size = 0;
-	private String name = "No name";
+	private String color; /**Classinstanser*/
+	private int price;
+	private int size;
+	//private String name= "No name";
 	
 	
 	
 	
 	public MainBike(){
 		
-		this.name = "Cykel";
+	
 		
 	}
 	
 	
-	public MainBike(String color) {
+	public MainBike(String color, int size) {
 		// TODO Auto-generated constructor stub
 	}
+	
+	public MainBike (String color, int size, int price){
+		this.color = color;
+		this.size = size;
+		this.price = price;
+	}
+	
 
 	public String getColor(){
-		return this.color;
+		return color;
 	}
 	
 	public int getSize(){
@@ -40,27 +47,19 @@ public class MainBike {
 
 	}
 	
-	public void setPrice1(int price){
-		if (price>0 && price <= constants.MAX_PRICE()){
-			this.MAX_PRICE = price;
+	public void setPrice1(int price){//Hämtar constants
+		if (price>= constants.MIN_PRICE && price <= constants.MAX_PRICE){
+			this.price= price;
+
+			
 		}
-	}
-	
-	public void setPrice(int price){
-		if (price>0 && price <= constants.MIN_PRICE){
-			this.MIN_PRICE = price;
 		}
-	}
 	
 	public void setSize1(int size){
-		if (size>0 && size <= constants.MAX_SIZE){
-			this.MIN_SIZE = size;
+		if (size>= constants.MIN_SIZE && size <= constants.MAX_SIZE){
+			this.size = size;
 		}
 	}
 	
-	public void setSize(int size){
-		if (size>0 && size <= constants.MIN_SIZE){
-			this.MIN_SIZE = size;
-		}
 	}
-	}
+	
