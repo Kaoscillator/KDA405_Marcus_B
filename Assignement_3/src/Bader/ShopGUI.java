@@ -64,7 +64,7 @@ public class ShopGUI extends JFrame {
 		
 		JScrollPane scrollPane = new JScrollPane();
 		scrollPane.setViewportBorder(null);
-		scrollPane.setBounds(362, 125, 196, 192);
+		scrollPane.setBounds(7, 173, 381, 192);
 		contentPane.add(scrollPane);
 		
 		
@@ -78,14 +78,14 @@ public class ShopGUI extends JFrame {
 		txtStorlek.setFont(new Font("Calibri", Font.PLAIN, 18));
 		txtStorlek.setBackground(new Color(204, 204, 204));
 		txtStorlek.setColumns(10);
-		txtStorlek.setBounds(30, 221, 116, 22);
+		txtStorlek.setBounds(136, 138, 116, 22);
 		contentPane.add(txtStorlek);
 		
 		txtFrg = new JTextField();
 		txtFrg.setFont(new Font("Calibri", Font.PLAIN, 18));
 		txtFrg.setBackground(new Color(204, 204, 204));
 		txtFrg.setColumns(10);
-		txtFrg.setBounds(30, 295, 116, 22);
+		txtFrg.setBounds(272, 138, 116, 22);
 		contentPane.add(txtFrg);
 		
 		txtPris = new JTextField();
@@ -93,7 +93,7 @@ public class ShopGUI extends JFrame {
 		txtPris.setBackground(new Color(204, 204, 204));
 		txtPris.setFont(new Font("Calibri", Font.PLAIN, 18));
 		txtPris.setColumns(10);
-		txtPris.setBounds(30, 151, 116, 22);
+		txtPris.setBounds(7, 138, 116, 22);
 		contentPane.add(txtPris);
 		
 		JButton btnNewButton = new JButton("NEUE BIKE");
@@ -104,6 +104,7 @@ public class ShopGUI extends JFrame {
 				int size_1 = Integer.parseInt (txtStorlek.getText());
 				bikeshop.addBike(color_1, size_1, price_1);
 				textArea.setText(bikeshop.getMainBikes());
+				
 				/*txtFrg.setText("");
 				txtStorlek.setText("");
 				txtPris.setText("");*/
@@ -114,22 +115,22 @@ public class ShopGUI extends JFrame {
 		btnNewButton.setForeground(new Color(51, 51, 51));
 		btnNewButton.setBackground(Color.LIGHT_GRAY);
 		btnNewButton.setFont(new Font("Calibri", Font.BOLD | Font.ITALIC, 22));
-		btnNewButton.setBounds(198, 186, 129, 67);
+		btnNewButton.setBounds(418, 138, 129, 227);
 		contentPane.add(btnNewButton);
 		
 		JLabel lblNewLabel_1 = new JLabel("PRICE");
 		lblNewLabel_1.setForeground(Color.LIGHT_GRAY);
-		lblNewLabel_1.setBounds(30, 129, 116, 16);
+		lblNewLabel_1.setBounds(7, 116, 116, 16);
 		contentPane.add(lblNewLabel_1);
 		
 		JLabel lblNewLabel_2 = new JLabel("SIZE");
 		lblNewLabel_2.setForeground(Color.LIGHT_GRAY);
-		lblNewLabel_2.setBounds(30, 186, 116, 22);
+		lblNewLabel_2.setBounds(136, 103, 116, 22);
 		contentPane.add(lblNewLabel_2);
 		
 		JLabel lblNewLabel_3 = new JLabel("COLOR");
 		lblNewLabel_3.setForeground(Color.LIGHT_GRAY);
-		lblNewLabel_3.setBounds(30, 266, 116, 16);
+		lblNewLabel_3.setBounds(272, 109, 116, 16);
 		contentPane.add(lblNewLabel_3);
 		
 		JLabel lblNewLabel = new JLabel("New label");

@@ -9,7 +9,7 @@ public class Shop{
 		
 	}
 	
-	private ArrayList <MainBike> allBikes = new ArrayList<MainBike>();
+	private ArrayList <MainBike> allBikes = new ArrayList<MainBike>();//**superviktigt att skriva såhär!!!*/
 	//private String myBikes;
 	//private String name;
 	
@@ -46,7 +46,7 @@ public class Shop{
 			s = s + "Bike no: " + (i +1) + " price: " + allBikes.get(i).getPrice() + " size: "+ allBikes.get(i).getSize() + " inches " + " Color " + allBikes.get(i).getColor() + "\n";
 			
 		}
-		return s;
+		return s;/*Vad betyder det här s:et egentligen?*/
 	
 	
 	}

@@ -5,10 +5,6 @@ import java.util.ArrayList;
 public class TestBike {
 	
 	
-	
-	 
-	
-	
 public static void main(String[] args) {
 	
 	ArrayList <MainBike> bikesTest = new ArrayList <MainBike>();
@@ -27,6 +23,10 @@ public static void main(String[] args) {
 		
 		System.out.println (" This is a test for Bike program");
 		System.out.println (" **Start test");
+		
+		/*for (Testbike MainBikes : bikesTest){ förenklad forloop typ såhär
+		 * system.out osv
+		 */
 	
 	for (int i=0; i<bikesTest.size(); i++){
 		

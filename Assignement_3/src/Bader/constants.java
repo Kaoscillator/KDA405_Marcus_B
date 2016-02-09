@@ -11,6 +11,8 @@ public class constants {
 	
 	public static final String [] COLORS = {"blue","red", "yellow", "black", "orange", "grey"};
 	
+	/** public static enum ALLOWED_C (green,black,red));*/
+	
 		
 		
 	}
