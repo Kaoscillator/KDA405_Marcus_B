@@ -7,7 +7,7 @@ public class Human {
 	
 	
 	
-	public Human() {
+	public Human(String name) {
 		name = name;
 		
 		// TODO Auto-generated constructor stub
