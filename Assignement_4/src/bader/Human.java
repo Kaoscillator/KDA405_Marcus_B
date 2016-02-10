@@ -1,47 +1,56 @@
 package bader;
 
-public class Human {
+import java.util.ArrayList;
+
+public class Human{
 	
 	private String name; /**Classinstanser*/
-	private int dog;
+	private Dog dog;
+	//private String info;
+	
 	
 	
 	
 	public Human(String name) {
-		name = name;
-		
+		this.name = name;
+	
 		// TODO Auto-generated constructor stub
 	}
 	
-	public Human (String name, int dog){
-		this.dog = dog;
+	public String getName(){
+		return  this.name;
 		
 		
 	}
 
-	/*public static void main(String[] args) {
-		// TODO Auto-generated method stub*/
+	public void buyDog(Dog dog){
+		this.dog = dog;
+	}
+	
+	public String getInfo(){
+		
+		
+	
+		
+	if (dog == null){
+		String info = getName() + "äger inte en hund";
+				return info;
+		
+	}else{
+		
+		String info = getName() + "äge en hund som heter" + dog.getDogName();
+				return info;
+	}
+}
+}
 		
 		
 		
 
-		public String getName(){
-			return name;
-		}
 		
-		public int getDog(){
-			return this.dog;
-		}
 		
-		public int buyDog(){
-			return this.dog;
-		}
 		
-		public String getInfo(){
-			return name;
-		}
-     }
-
-return
+		
+		
 
 

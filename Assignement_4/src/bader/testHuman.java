@@ -11,22 +11,24 @@ public static void main(String[] args) {
 			
 			ArrayList <Human> dogOwner = new ArrayList <Human>();
 			 
-			 dogOwner.add(new Human("Anders",0));
-			 dogOwner.add(new Human("Per",0));
-			 dogOwner.add(new Human("Lars", 0));
-			 dogOwner.add(new Human("Marcus",0));
-			 dogOwner.add(new Human("Pia",0));
-			 dogOwner.add(new Human("Jeanette",0));
-			 dogOwner.add(new Human("Bruno",0));
-			 dogOwner.add(new Human("Lasse",0));
-			 dogOwner.add(new Human("Hiwa",0));
-			 dogOwner.add(new Human("Samira",0));
+			 dogOwner.add(new Human("Hans"));
+			 dogOwner.add(new Human("Lena"));
+			 dogOwner.add(new Human("Uffe"));
+			 dogOwner.add(new Human("Bror"));
+			 dogOwner.add(new Human("Anna"));
+			 dogOwner.add(new Human("Ulla"));
+			 dogOwner.add(new Human("Brolle"));
+			 dogOwner.add(new Human("Jan"));
+			 dogOwner.add(new Human("Catti"));
+			 dogOwner.add(new Human("Unni"));
+			 
+			 
 		    
 				
-				System.out.println (" This is a test for Bike program"); //Skriver ut i konsol
+				System.out.println (" This is a test for Human program"); //Skriver ut i konsol
 				System.out.println (" **Start test");
 			
-				for (int i=0; i<dogOwner).name(); i++){ //itererar genom arrayen
+				for (int i=0; i<dogOwner.name(); i++){ //itererar genom arrayen
 					
 					
 					System.out.println(dogOwner.get(i).getName() +  " äger en hund som heter " + dogOwner.get(i).getDog());
