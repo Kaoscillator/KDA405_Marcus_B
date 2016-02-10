@@ -38,7 +38,7 @@ public class Human{
 		
 	}else{
 		
-		String info = getName() + "äge en hund som heter" + dog.getDogName();
+		String info = getName() + " äger en hund som heter " + dog.getDogName() +".";
 				return info;
 	}
 }

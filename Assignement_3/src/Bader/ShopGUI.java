@@ -20,6 +20,8 @@ import java.awt.Font;
 import javax.swing.ScrollPaneConstants;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
+import javax.swing.UIManager;
+import java.awt.SystemColor;
 
 public class ShopGUI extends JFrame {
 
@@ -64,39 +66,39 @@ public class ShopGUI extends JFrame {
 		
 		JScrollPane scrollPane = new JScrollPane();
 		scrollPane.setViewportBorder(null);
-		scrollPane.setBounds(7, 173, 381, 192);
+		scrollPane.setBounds(17, 173, 381, 192);
 		contentPane.add(scrollPane);
 		
 		
 		JTextArea textArea = new JTextArea();
-		textArea.setFont(new Font("Calibri", Font.BOLD, 15));
-		textArea.setBackground(Color.LIGHT_GRAY);
+		textArea.setFont(new Font("Calibri", Font.BOLD, 17));
+		textArea.setBackground(SystemColor.menu);
 		scrollPane.setViewportView(textArea);
 		//textArea.setText(TestBike.bikesTest());
 		
 		txtStorlek = new JTextField();
 		txtStorlek.setFont(new Font("Calibri", Font.PLAIN, 18));
-		txtStorlek.setBackground(new Color(204, 204, 204));
+		txtStorlek.setBackground(SystemColor.menu);
 		txtStorlek.setColumns(10);
-		txtStorlek.setBounds(136, 138, 116, 22);
+		txtStorlek.setBounds(146, 138, 116, 22);
 		contentPane.add(txtStorlek);
 		
 		txtFrg = new JTextField();
 		txtFrg.setFont(new Font("Calibri", Font.PLAIN, 18));
-		txtFrg.setBackground(new Color(204, 204, 204));
+		txtFrg.setBackground(SystemColor.menu);
 		txtFrg.setColumns(10);
-		txtFrg.setBounds(272, 138, 116, 22);
+		txtFrg.setBounds(274, 138, 124, 22);
 		contentPane.add(txtFrg);
 		
 		txtPris = new JTextField();
 		txtPris.setForeground(new Color(0, 0, 0));
-		txtPris.setBackground(new Color(204, 204, 204));
+		txtPris.setBackground(SystemColor.menu);
 		txtPris.setFont(new Font("Calibri", Font.PLAIN, 18));
 		txtPris.setColumns(10);
-		txtPris.setBounds(7, 138, 116, 22);
+		txtPris.setBounds(17, 138, 116, 22);
 		contentPane.add(txtPris);
 		
-		JButton btnNewButton = new JButton("NEUE BIKE");
+		JButton btnNewButton = new JButton("NEW BIKE");
 		btnNewButton.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
 				String color_1 = txtFrg.getText();//sätter text
@@ -113,24 +115,27 @@ public class ShopGUI extends JFrame {
 			}
 		});
 		btnNewButton.setForeground(new Color(51, 51, 51));
-		btnNewButton.setBackground(Color.LIGHT_GRAY);
-		btnNewButton.setFont(new Font("Calibri", Font.BOLD | Font.ITALIC, 22));
+		btnNewButton.setBackground(SystemColor.menu);
+		btnNewButton.setFont(new Font("Calibri", Font.BOLD, 22));
 		btnNewButton.setBounds(418, 138, 129, 227);
 		contentPane.add(btnNewButton);
 		
 		JLabel lblNewLabel_1 = new JLabel("PRICE");
+		lblNewLabel_1.setFont(new Font("Calibri", Font.BOLD, 22));
 		lblNewLabel_1.setForeground(Color.LIGHT_GRAY);
-		lblNewLabel_1.setBounds(7, 116, 116, 16);
+		lblNewLabel_1.setBounds(17, 116, 116, 16);
 		contentPane.add(lblNewLabel_1);
 		
 		JLabel lblNewLabel_2 = new JLabel("SIZE");
+		lblNewLabel_2.setFont(new Font("Calibri", Font.BOLD, 22));
 		lblNewLabel_2.setForeground(Color.LIGHT_GRAY);
-		lblNewLabel_2.setBounds(136, 103, 116, 22);
+		lblNewLabel_2.setBounds(146, 113, 116, 22);
 		contentPane.add(lblNewLabel_2);
 		
 		JLabel lblNewLabel_3 = new JLabel("COLOR");
+		lblNewLabel_3.setFont(new Font("Calibri", Font.BOLD, 22));
 		lblNewLabel_3.setForeground(Color.LIGHT_GRAY);
-		lblNewLabel_3.setBounds(272, 109, 116, 16);
+		lblNewLabel_3.setBounds(272, 116, 116, 16);
 		contentPane.add(lblNewLabel_3);
 		
 		JLabel lblNewLabel = new JLabel("New label");

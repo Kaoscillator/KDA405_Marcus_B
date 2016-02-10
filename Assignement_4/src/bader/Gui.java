@@ -15,6 +15,8 @@ import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
 import java.awt.Color;
 import java.awt.Font;
+import javax.swing.JEditorPane;
+import java.awt.SystemColor;
 
 public class Gui extends JFrame {
 
@@ -69,6 +71,9 @@ public class Gui extends JFrame {
 		contentPane.add(Buydog);
 		
 		Fel = new JTextField();
+		Fel.setForeground(new Color(255, 51, 51));
+		Fel.setFont(new Font("Calibri", Font.BOLD | Font.ITALIC, 22));
+		Fel.setHorizontalAlignment(SwingConstants.CENTER);
 		Fel.setColumns(10);
 		Fel.setBounds(37, 440, 639, 39);
 		contentPane.add(Fel);
@@ -116,21 +121,29 @@ public class Gui extends JFrame {
 		});
 		btnPrintInfo.setFont(new Font("Calibri", Font.PLAIN, 13));
 		btnPrintInfo.setBackground(new Color(255, 255, 255));
-		btnPrintInfo.setBounds(314, 309, 116, 25);
+		btnPrintInfo.setBounds(314, 247, 128, 25);
 		contentPane.add(btnPrintInfo);
 		
 		Info = new JTextField();
+		Info.setHorizontalAlignment(SwingConstants.CENTER);
+		Info.setFont(new Font("Calibri", Font.PLAIN, 22));
 		Info.setBounds(37, 384, 639, 39);
 		contentPane.add(Info);
 		Info.setColumns(10);
 		
-		Fel = new JTextField();
-		Fel.setColumns(10);
-		Fel.setBounds(37, 440, 639, 39);
-		contentPane.add(Fel);
+		JEditorPane dtrpnInfo = new JEditorPane();
+		dtrpnInfo.setText("INFO");
+		dtrpnInfo.setBounds(37, 348, 106, 22);
+		contentPane.add(dtrpnInfo);
+		
+		JButton Clear = new JButton("CLEAR");
+		Clear.setBackground(new Color(255, 255, 255));
+		Clear.setBounds(536, 140, 97, 25);
+		contentPane.add(Clear);
 		
 		JLabel lblNewLabel = new JLabel("New label");
-		lblNewLabel.setForeground(Color.WHITE);
+		lblNewLabel.setFont(new Font("Calibri", Font.BOLD, 17));
+		lblNewLabel.setForeground(new Color(0, 0, 0));
 		lblNewLabel.setIcon(new ImageIcon(Gui.class.getResource("/bader/KennelGUI.png")));
 		lblNewLabel.setBounds(-153, 0, 972, 642);
 		contentPane.add(lblNewLabel);
