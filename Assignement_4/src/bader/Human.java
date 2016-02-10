@@ -33,12 +33,12 @@ public class Human{
 	
 		
 	if (dog == null){
-		String info = getName() + "äger inte en hund";
+		String info = getName() + " is not a dogowner. ";
 				return info;
 		
 	}else{
 		
-		String info = getName() + " äger en hund som heter " + dog.getDogName() +".";
+		String info = getName() + " owns a dog named " + dog.getDogName() +".";
 				return info;
 	}
 }

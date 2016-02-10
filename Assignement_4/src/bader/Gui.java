@@ -57,17 +57,19 @@ public class Gui extends JFrame {
 		contentPane.setLayout(null);
 		
 		HumanName = new JTextField();
+		HumanName.setForeground(SystemColor.controlShadow);
 		HumanName.setHorizontalAlignment(SwingConstants.CENTER);
-		HumanName.setFont(new Font("Calibri", Font.PLAIN, 22));
-		HumanName.setBounds(76, 97, 203, 54);
+		HumanName.setFont(new Font("Calibri", Font.PLAIN, 30));
+		HumanName.setBounds(37, 97, 242, 54);
 		contentPane.add(HumanName);
 		HumanName.setColumns(10);
 		
 		Buydog = new JTextField();
+		Buydog.setForeground(SystemColor.controlShadow);
 		Buydog.setHorizontalAlignment(SwingConstants.CENTER);
-		Buydog.setFont(new Font("Calibri", Font.PLAIN, 22));
+		Buydog.setFont(new Font("Calibri", Font.PLAIN, 30));
 		Buydog.setColumns(10);
-		Buydog.setBounds(76, 164, 203, 53);
+		Buydog.setBounds(37, 164, 242, 53);
 		contentPane.add(Buydog);
 		
 		Fel = new JTextField();
@@ -79,6 +81,7 @@ public class Gui extends JFrame {
 		contentPane.add(Fel);
 		
 		JButton btnNewButton = new JButton("NEW HUMAN");
+		btnNewButton.setForeground(SystemColor.menuText);
 		btnNewButton.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				
@@ -93,10 +96,11 @@ public class Gui extends JFrame {
 		});
 		btnNewButton.setFont(new Font("Calibri", Font.PLAIN, 13));
 		btnNewButton.setBackground(new Color(255, 255, 255));
-		btnNewButton.setBounds(314, 112, 128, 25);
+		btnNewButton.setBounds(301, 102, 128, 39);
 		contentPane.add(btnNewButton);
 		
 		JButton btnBuyDog = new JButton("BUY DOG");
+		btnBuyDog.setForeground(SystemColor.menuText);
 		btnBuyDog.setFont(new Font("Calibri", Font.PLAIN, 13));
 		btnBuyDog.setBackground(new Color(255, 255, 255));
 		btnBuyDog.addActionListener(new ActionListener() {
@@ -107,10 +111,11 @@ public class Gui extends JFrame {
 				human.buyDog(dog);
 			}
 		});
-		btnBuyDog.setBounds(314, 178, 128, 25);
+		btnBuyDog.setBounds(301, 175, 128, 39);
 		contentPane.add(btnBuyDog);
 		
 		btnPrintInfo = new JButton("PRINT INFO");
+		btnPrintInfo.setForeground(SystemColor.menuText);
 		btnPrintInfo.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				
@@ -121,10 +126,11 @@ public class Gui extends JFrame {
 		});
 		btnPrintInfo.setFont(new Font("Calibri", Font.PLAIN, 13));
 		btnPrintInfo.setBackground(new Color(255, 255, 255));
-		btnPrintInfo.setBounds(314, 247, 128, 25);
+		btnPrintInfo.setBounds(301, 235, 128, 25);
 		contentPane.add(btnPrintInfo);
 		
 		Info = new JTextField();
+		Info.setForeground(SystemColor.windowBorder);
 		Info.setHorizontalAlignment(SwingConstants.CENTER);
 		Info.setFont(new Font("Calibri", Font.PLAIN, 22));
 		Info.setBounds(37, 384, 639, 39);
@@ -132,13 +138,16 @@ public class Gui extends JFrame {
 		Info.setColumns(10);
 		
 		JEditorPane dtrpnInfo = new JEditorPane();
+		dtrpnInfo.setFont(new Font("Calibri", Font.BOLD, 19));
+		dtrpnInfo.setForeground(SystemColor.activeCaption);
 		dtrpnInfo.setText("INFO");
 		dtrpnInfo.setBounds(37, 348, 106, 22);
 		contentPane.add(dtrpnInfo);
 		
 		JButton Clear = new JButton("CLEAR");
+		Clear.setForeground(SystemColor.textHighlight);
 		Clear.setBackground(new Color(255, 255, 255));
-		Clear.setBounds(536, 140, 97, 25);
+		Clear.setBounds(488, 147, 140, 25);
 		contentPane.add(Clear);
 		
 		JLabel lblNewLabel = new JLabel("New label");
