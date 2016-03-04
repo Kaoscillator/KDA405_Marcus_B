@@ -8,7 +8,6 @@ public class PictureScreen {
 	public static void main(String[] args) {
 		PixelController px = PixelController.getInstance(Screen.FLOOR_5);
 		// TODO Auto-generated method stub
-
 				
 				//Väntar på kontakt med skärm
 				
